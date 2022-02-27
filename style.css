@@ -1,0 +1,452 @@
+body
+{
+    background-color: black;
+    color:lightgray;
+    /* For mobile phones */
+    width: 100%;
+    text-align: center;
+    margin:0;
+    font-family: 'Fuzzy Bubbles', cursive;
+    padding:0;
+}   
+
+header
+{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0.5rem 0;
+    
+    
+}
+
+header > a 
+{
+    text-decoration: none;
+    color:gold;
+}
+
+header > a:visited
+{
+    color:gold;
+}
+
+.navigation 
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding: 0 0 ;
+    top:0;
+    left:0;
+    background-color:#00BFFF ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation a 
+{
+    margin: 0 1rem;
+    text-decoration: none;
+    color: black;
+    height:100%;
+}
+.navElement1 
+{
+    position: relative;
+    margin:0;
+    padding:0;
+    height: 100%;
+}
+.navElement1 a
+{
+    padding: 0.5rem 0;
+}
+
+
+.navElement1 ul
+{
+    width: 200px;
+    text-align: center;
+    position: absolute;
+    background-color: #1E90FF;
+    padding: 0;
+    margin:0;
+    list-style-type: none;
+    margin-top: 6px;
+    border-radius: 7px;
+    display:none;
+    
+}
+
+.navElement1 ul li
+{
+    padding:0.5rem;
+    
+}
+.navElement1 ul li a{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    padding:0;
+    margin:0;
+
+}
+.navElement2 
+{
+    padding: 0.5rem;
+}
+
+.navElement1 ul li:hover
+{
+    background-color: #0E80FF;
+    border-radius: 7px;
+}
+
+.navElement1 a:focus + ul,
+.navElement1 a:hover + ul,
+.navElement1 ul:hover {
+    display: block;
+}
+footer {
+    padding:1rem;
+    
+}
+footer a {
+    text-decoration: none;
+    color: lightgray;
+    text-transform: uppercase;
+    
+}
+
+ /* memory*/
+
+.gridContainer 
+{
+    display: grid;
+    color:black;
+
+}
+
+.window
+{
+    display:grid;
+    height:100%;
+    width: 100%;
+}
+
+h1{
+    width: 70%;
+    font-size: 16px;
+    text-align: justify;
+    padding: 0.5rem;
+    display: inline-block;
+}
+
+
+.img1 {
+    display:none;
+    padding: 0.2rem;
+}
+
+.newgame {
+    display:none;
+}
+
+h2{
+    width: 70%;
+    font-size: 16px;
+    text-align:center;
+    padding: 0.5rem;
+    display: inline-block;
+
+}
+
+.imgTraditionalGame {
+    display:inline-block;
+    padding: 0.2rem;
+    padding-bottom: 5rem;
+   
+}
+.imgLizardGame {
+    display:inline-block;
+    padding: 0.2rem;
+    padding-bottom: 5rem;
+
+}
+
+.imgTraditionalGame:hover{
+    cursor:pointer;
+}
+.imgLizardGame:hover{
+    cursor:pointer;
+}
+
+.GridTraditionalGameArea{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 0.1rem;
+    grid-column-gap: 0.1rem;
+    grid-row-gap: 0.1rem;
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+    display:none;
+    color:black;
+}
+
+.computerPlayer {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 0.2rem;
+    font-size: 30px;
+    text-align: center;
+}
+
+.colon {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 0.2rem;
+    font-size: 30px;
+    text-align: center;
+}
+
+.player {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 0.2rem;
+    font-size: 30px;
+    text-align: center;
+}
+
+.paper{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 0.2rem;
+    font-size: 30px;
+    text-align: center;
+    height: 3rem;
+}
+
+.paper:hover{
+    background-color: rgba(225, 225, 225, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 0.2rem;
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+    height: 3rem;
+}
+
+.rock{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 0.2rem;
+    font-size: 30px;
+    text-align: center;
+    height: 3rem;
+}
+
+.rock:hover{
+    background-color: rgba(225, 225, 225, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 0.2rem;
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+    height: 3rem;
+}
+
+.scissors{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 0.2rem;
+    font-size: 30px;
+    text-align: center;
+    height: 3rem;
+}
+
+.scissors:hover{
+    background-color: rgba(225, 225, 225, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 0.2rem;
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+    height: 3rem; 
+}
+
+.GridLizardGameArea {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 0.1rem;
+    grid-column-gap: 0.1rem;
+    grid-row-gap: 0.1rem;
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+    color:black;
+    
+}
+
+.player2 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 0.2rem;
+    font-size: 30px;
+    text-align: center;
+    grid-column: 1 / 3;
+}
+
+.colon2 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 0.2rem;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.computerPlayer2 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    grid-column: 4 / 6;
+    padding: 0.2rem;
+    font-size: 30px;
+    text-align: center;
+    
+}
+
+.paper2{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 0.2rem;
+    font-size: 30px;
+    text-align: center;
+    height: 3rem;
+}
+
+.paper2:hover{
+    background-color: rgba(225, 225, 225, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 0.2rem;
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+    height: 3rem;
+}
+
+.rock2{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 0.2rem;
+    font-size: 30px;
+    text-align: center;
+    height: 3rem;
+}
+
+.rock2:hover{
+    background-color: rgba(225, 225, 225, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 0.2rem;
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+    height: 3rem;
+
+}
+
+.scissors2{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 0.2rem;
+    font-size: 30px;
+    text-align: center;
+    height: 3rem;
+}
+
+.scissors2:hover{
+    background-color: rgba(225, 225, 225, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 0.2rem;
+    font-size: 30px;
+    text-align: center;
+    cursor:pointer;
+    height: 3rem;
+}
+
+.spock{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 0.2rem;
+    font-size: 30px;
+    text-align: center;
+    height: 3rem;
+}
+
+.spock:hover{
+    background-color: rgba(225, 225, 225, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 0.2rem;
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+    height: 3rem;
+}
+
+.lizard{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 0.2rem;
+    font-size: 30px;
+    text-align: center;
+    height: 3rem;
+}
+
+.lizard:hover{
+    background-color: rgba(225, 225, 225, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 0.2rem;
+    font-size: 30px;
+    text-align: center;
+    cursor:pointer;
+    height: 3rem;
+}
+
+#tRock {
+    display: none;
+}
+
+#tScissors {
+    display: none;
+}
+
+#tPaper {
+    display: none;
+}
+
+#tRockC {
+    display: none;
+}
+
+#tScissorsC {
+    display: none;
+}
+
+#tPaperC {
+    display: none;
+}
+
+h3{
+    font-size: 16px;
+    text-align: justify;
+    display: inline-block;
+}
+
+h4{
+    font-size: 16px;
+    text-align: justify;
+    display: inline-block;
+}
