@@ -721,17 +721,3 @@ spock.addEventListener('click', () => {
     }
 })
 
-//const gameover = () => {
- //   if (Turnsleft == 0) { 
-  //      if (playerPoints==computerPoints) {
-   //         myHeading3.textContent = 'Draw! Try again';
-    //        } else if (playerPoints > computerPoints) {
-     ///           myHeading3.textContent = 'You win! Try again';
-      //      } else {
- //               myHeading3.textContent = 'You lose! Try again';
-  //  }
-  //  playerPoints=0
-  //  computerPoints=
-  //  myHeading5.textContent = playerPoints+' : '+computerPoints;
-  //  }
-//}
